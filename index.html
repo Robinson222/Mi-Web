@@ -3,26 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title>Robinson Web Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial;
-      background-color: #f0f0f0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      margin: 0;
+      padding: 0;
       color: #333;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 40px 20px;
       text-align: center;
-      padding: 50px;
     }
 
-    h1 {
-      color: #0077cc;
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
 
-    .card {
-      background: white;
-      max-width: 400px;
-      margin: auto;
+    nav {
+      background-color: #005fa3;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .seccion {
+      max-width: 800px;
+      margin: 40px auto;
       padding: 20px;
+      background-color: white;
       border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .seccion h2 {
+      color: #0077cc;
+      margin-bottom: 20px;
+    }
+
+    .servicio {
+      margin: 10px 0;
+      font-size: 1.1em;
     }
 
     .botones {
@@ -55,19 +93,74 @@
     .correo:hover {
       background-color: #005fa3;
     }
+
+    .encuesta {
+      background-color: #ff9800;
+    }
+
+    .encuesta:hover {
+      background-color: #e38900;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Hola, soy Robinson</h1>
-    <p>Desarrollo páginas web económicas para negocios y emprendedores.</p>
-    <p><strong>🌐 Servicios:</strong> Webs básicas, tiendas, portafolios</p>
-    <p><strong>💵 Desde:</strong> $80.000</p>
+  <header>
+    <h1>Robinson Web Studio</h1>
+    <p>Desarrollo páginas web económicas y funcionales para emprendedores y negocios locales</p>
+  </header>
 
-   <div class="botones">
-  <a class="boton whatsapp" href="https://wa.me/573215185326" target="_blank">📱 WhatsApp</a>
-  <a class="boton correo" href="mailto:Pecas0072@gmail.com?subject=Consulta%20de%20servicio&body=Hola%20Robinson,%20quiero%20una%20página%20web." target="_blank">📧 Correo</a>
-</div>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobremi">Acerca de mí</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#ejemplos">Ejemplos</a>
+    <a href="https://forms.gle/tuenlaceaqui" target="_blank">Encuesta</a>
+  </nav>
+
+  <div class="seccion" id="sobremi">
+    <h2>Sobre mí</h2>
+    <p>Soy Robinson, joven desarrollador web apasionado por la tecnología. Me encanta ayudar a negocios a tener presencia en internet de forma profesional y económica.
+    </p>
+  </div>
+
+  <div class="seccion" id="servicios">
+    <h2>Servicios</h2>
+    <p class="servicio">🌐 Página Web Básica</p>
+    <p class="servicio">🛍️ Tienda Virtual</p>
+    <p class="servicio">🖼️ Portafolio Personal</p>
+    <p class="servicio">💼 Landing Page para negocios</p>
+    <p><strong>💵 Desde:</strong> $80.000 COP</p>
+  </div>
+
+  <div class="seccion" id="ejemplos">
+    <h2>Ejemplos de páginas</h2>
+    <p>Muy pronto podrás ver ejemplos de sitios que he creado aquí. ¡Estoy trabajando en ello!</p>
+  </div>
+
+  <div class="seccion" id="contacto">
+    <h2>Contáctame</h2>
+    <p>¿Quieres tu propia página? ¡Escríbeme!</p>
+    <div class="botones">
+      <a class="boton whatsapp" href="https://wa.me/573215185326" target="_blank">📱 WhatsApp</a>
+      <a class="boton correo" href="mailto:Pecas0072@gmail.com?subject=Consulta%20de%20servicio&body=Hola%20Robinson,%20quiero%20una%20página%20web." target="_blank">📧 Correo</a>
+      <a class="boton encuesta" href="https://forms.gle/tuenlaceaqui" target="_blank">📝 Encuesta</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Robinson Web Studio - Todos los derechos reservados
+  </footer>
+</body>
+</html>
+
 
 </body>
 </html>
